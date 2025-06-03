@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>아이스 페퍼민트 모카레시피</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #2d331e;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      text-align: center;
+      padding: 30px 20px 20px;
+    }
+    header h1 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #4e4e4e;
+    }
+    #searchInput {
+      margin: 0 auto 20px;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 250px;
+      font-size: 14px;
+    }
+    nav.category {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding-bottom: 20px;
+    }
+    nav.category a {
+      text-decoration: none;
+      color: #888;
+      font-size: 16px;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+      cursor: pointer;
+    }
+    nav.category a.active {
+      color: #333;
+      border-color: #333;
+    }
+    nav h1 {
+      color: white;
+      text-align: center;
+      font-size: 40px;
+      margin-top: 40px;
+    }
+    nav p {
+      text-align: center;
+      color: white;
+      font-size: 27px;
+    }
+    section {
+      text-align: left;
+      color: white;
+      padding: 0 30px 30px;
+      font-size: 32px;
+    }
+    main ul {
+      color: white;
+      text-align: left;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+    main ol {
+      color: white;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+    footer {
+      background-color: white;
+      color: #2d331e;
+      text-align: left;
+      font-size: 20px;
+      padding: 20px 30px;
+    }
+
+    /* 새로 추가한 메뉴 그리드 스타일 */
+    #coffeeGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 30px;
+      background-color: #2d331e;
+    }
+    .menu {
+      background-color: #f2f2f2;
+      text-align: center;
+      border-radius: 10px;
+      padding: 15px;
+    }
+    .menu img {
+      width: 100%;
+      max-width: 180px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12%;
+      margin-bottom: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .menu p {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0;
+      color: #2d331e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>취향에 딱 맞는 커피 레시피를 찾아보세요</h1>
+    <input id="searchInput" type="text" placeholder="레시피 이름으로 검색해보세요" />
+  </header>
+
+  <!-- 카테고리 탭 -->
+  <nav class="category">
+  <a href="../index.html?category=espresso">에소프레소</a>
+  <a href="../index.html?category=latte">카페라떼</a>
+  <a href="../index.html?category=ice">아이스 음료</a>
+  </nav>
+
+
+  <!-- 이미지 목록 영역 -->
+  <main id="coffeeGrid" class="coffee-grid">
+    <!-- 메뉴 자동 렌더링 -->
+  </main>
+
+  <!-- 기존 레시피 내용 -->
+  <nav>
+    <h1>아이스 페퍼민트모카 레시피</h1>  
+    <p>완성시간 : 3분 ~ 5분  난이도 : 쉬움</p>
+  </nav>
+
+  <section>
+    <p>준비물</p>
+    <ul>
+      <li>에스프레소 1샷 (약 30–40ml) 또는 진하게 내린 커피</li>
+      <li>코코넛 밀크 150ml (캔 타입 또는 음료용 가능)</li>
+      <li>얼음 1컵</li>
+      <li>바닐라 시럽 또는 꿀 1~2큰술 (선택)</li>
+      <li>토핑용 코코넛 플레이크 (선택)</li>
+    </ul>
+
+    <p>레시피</p>
+    <ol>
+      <li>에스프레소를 진하게 1샷 추출한다 (머신이 없다면 인스턴트 커피를 진하게 타도 가능하다)</li>
+      <li>컵에 얼음을 가득 채운다</li>
+      <li>얼음 위에 바닐라 시럽 또는 꿀을 먼저 넣는다</li>
+      <li>그 위에 코코넛 밀크를 붓는다 (코코넛 밀크가 층을 이뤄 예쁘게 보이도록 천천히 붓는 것이 좋다)</li>
+      <li>마지막으로 에스프레소를 위에서 살살 부어 마블링 효과를 낸다</li>
+      <li>기호에 따라 코코넛 플레이크나 시나몬 파우더로 토핑해 마무리한다</li>
+    </ol>
+  </section>
+
+  <footer>
+    <h1>팁</h1>
+    <ul>
+      <li>코코넛 밀크는 너무 진한 캔 제품보다는 ‘음료용 코코넛 밀크’(라이트 타입)를 추천해요. 진한 경우 물을 조금 섞으면 부드러워져요</li>
+      <li>단맛을 줄이고 싶다면 시럽 없이도 코코넛 밀크만으로도 충분히 고소하고 부드러워요</li>
+      <li>에스프레소를 부은 후 잘 저어 마시면 부드럽고 조화로운 맛이 납니다</li>
+      <li>코코넛 밀크는 오트밀크와 섞어도 맛있어요 (1:1 비율 추천)</li>
+    </ul>
+  </footer>
+  <script src="Now/script.js"></script>
+</body>
