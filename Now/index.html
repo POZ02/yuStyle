@@ -18,13 +18,23 @@
     header {
       background-color: #fff;
       text-align: center;
-      padding: 30px 20px 10px;
+      padding: 40px 30px 30px;
     }
 
     header h1 {
       font-size: 18px;
       margin-bottom: 15px;
       color: #4e4e4e;
+    }
+
+    #searchInput {
+      margin: 0 auto 20px;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 250px;
+      font-size: 14px;
     }
 
     nav ul {
@@ -81,9 +91,13 @@
 <body>
   <header>
     <h1>취향에 딱 맞는 커피 레시피를 찾아보세요</h1>
+
+    <!-- 🔍 검색창 -->
+    <input id="searchInput" type="text" placeholder="레시피 이름으로 검색해보세요">
+
     <nav>
       <ul>
-        <li><a href="#" class="active" data-category="espresso">에스프레소</a></li>
+        <li><a href="#" class="active" data-category="espresso">에소프레소</a></li>
         <li><a href="#" data-category="latte">카페라떼</a></li>
         <li><a href="#" data-category="ice">아이스 음료</a></li>
       </ul>
@@ -91,7 +105,7 @@
   </header>
 
   <main id="coffeeGrid" class="coffee-grid">
-    <!-- JavaScript가 여기에 메뉴를 자동으로 렌더링 -->
+    <!-- 메뉴 자동 렌더링 -->
   </main>
 
   <script src="script.js"></script>
