@@ -1,26 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <title>Home Cafe</title>
-    <style>
-        
-    </style>
-</head>
-    <body>
-    <header> <!--헤더-->
+  <meta charset="UTF-8">
+  <title>홈카페 레시피</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    <!--검색창-->    
-    <input type="search" id="search" placeholder="취향에 딱 맞는 커피 레시피를 찾아보세요">
-    </header>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #2d331e;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    header h1 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #4e4e4e;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #888;
+      padding-bottom: 5px;
+    }
+
+    nav a.active {
+      color: #333;
+      border-bottom: 2px solid #333;
+    }
+
+    main.coffee-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 40px;
+      background-color: #2d331e;
+    }
+
+    .menu {
+      background-color: #f2f2f2;
+      text-align: center;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .menu img {
+      width: 180px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12%;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .menu p {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>취향에 딱 맞는 커피 레시피를 찾아보세요</h1>
     <nav>
-        <ul>
-            <li>에소프레소</li>
-            <li>카페라테</li>
-            <li>아이스 음료</li>
-        </ul>
+      <ul>
+        <li><a href="#" class="active" data-category="espresso">에스프레소</a></li>
+        <li><a href="#" data-category="latte">카페라떼</a></li>
+        <li><a href="#" data-category="ice">아이스 음료</a></li>
+      </ul>
     </nav>
-    <main id="recipe-container">
-        
-    </main>
+  </header>
+
+  <main id="coffeeGrid" class="coffee-grid">
+    <!-- JavaScript가 여기에 메뉴를 자동으로 렌더링 -->
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
